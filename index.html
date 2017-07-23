@@ -2,10 +2,58 @@
 <html>
   <head>
       <title>Test Document</title>
+    <style>
+  div.slider {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+.img-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+.img-wrapper img {
+  width: 400 px;
+  position: absolute;
+}
+.Kitten {
+  width: 100%;
+  left: 0px;
+}
+.Leopard {
+  width: 1%;
+  right: 0px;
+}
+.Kitten img {
+  left: 0;
+}
+.Leopard img {
+  Right: 0;
+}
+/* Add hover transition */
+
+.Leopard {
+  transition: width 1s linear;
+}
+
+.slider:hover .Leopard {
+  width: 100%;
+}
+
+</style>
   </head>
   <body>
   
     <h1>Hello World</h1>
     <p> blaah blah blah blah blah blah blah blah blah blah blah</p>
+    <div class="slider">
+  <div class="img-wrapper Kitten"> <img src="http://www.keepingkittens.com/images/cute-little-kitten-minka-rose-the-real-cinderella-story-21652512.jpg" alt="Kitten" style="width:400;height:300;"></div>
+
+    <div class="img-wrapper Leopard"> <img src="http://timesofindia.indiatimes.com/thumb/msid-54010921,width-400,resizemode-4/54010921.jpg" alt="Leopard" style="width:400;height:300;">
+    </div>
+</div>
    </body>
    </html>
